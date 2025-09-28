@@ -3,9 +3,10 @@ This project is showing the implementation of Longest Common Substring algorithm
 
 Project Overview and Advanced Design:-
 I have done the design on memory efficiency, and choosing the O(min(M,N)) space optimization specifically to handle potentially long strings. This approach also naturally supports the row-by-row output needed for the visualization process.
-1.Complexity (O(N)): the code achieves O(min(M,N)) space complexity, reducing memory overhead from the standard O(M×N) table. This is achieved by utilizing only two vectors, dp_current and dp_previous. The time complexity remains the standard O(M×N)."
-2.The Visualization Requirement: This code is designed to give the results of the DP computation row by row, and so fulfills the task specification to visualize the "dynamically growing table.
-3.Design: The main logic is hidden in the SubstringAnalyzer class. "The hardcoded test case (strings 'ALGORITHM' and 'LOGARITHM') was used because it provides a complex, non-trivial match pattern ('GORITHM'), clearly showing the algorithm's ability to handle long, non-starting substrings."
+* Complexity (O(N)): the code achieves O(min(M,N)) space complexity, reducing memory overhead from the standard O(M×N) table. This is achieved by utilizing only two vectors, dp_current and dp_previous. The time complexity remains the standard O(M×N)."
+* The Visualization Requirement: This code is designed to give the results of the DP computation row by row, and so fulfills the task specification to visualize the "dynamically growing table.
+* Design: The main logic is hidden in the SubstringAnalyzer class. "The hardcoded test case (strings 'ALGORITHM' and 'LOGARITHM') was used because it provides a complex, non-trivial match pattern ('GORITHM'), clearly showing the algorithm's ability to handle long, non-starting substrings."
+
 
 How to Compile and Run:-
 The package is self-contained in an single cpp file and can be compiled and run from any standard terminal environment.
